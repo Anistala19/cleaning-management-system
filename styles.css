@@ -1,0 +1,488 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #750a0a;
+    color: #fff;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    text-align: center;
+}
+
+.menu, .components {
+    list-style: none;
+    padding-left: 0;
+}
+
+.menu li, .components li {
+    margin: 20px 0;
+}
+
+.menu li a, .components li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.menu li a.active, .menu li a:hover {
+    background-color: #a00c0c;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+header {
+    background: #750a0a;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:20px 0 20px 0;
+}
+
+header a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.head{
+    padding-left: 25px;
+}
+
+.right-head{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding-right: 15px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.logo span{
+    padding-left: 15px;
+    color: #fff;
+}
+
+.logo img{
+    width: 50px;
+    margin-left: 15px;
+}
+
+.search-bar input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.user-profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.user-profile span{
+    padding: 10px 0 10px 0;
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+}
+
+.cards {
+    display: flex;
+    justify-content:space-around;
+    margin: 30px 0 30px 0;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+
+}
+.cards a{
+    width: 100%;
+    text-decoration: none;
+}
+
+.card h3 {
+    color: #333;
+    padding-top: 10px;
+}
+
+.card img{
+    width: 100%;
+}
+
+.card p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card small {
+    color: #888;
+}
+
+.staff-request {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.approval-section {
+    display: none;
+    margin-top: 30px;
+}
+
+button.approve {
+    background-color: #28a745;
+}
+
+button.approve:hover {
+    background-color: #218838;
+}
+
+button.reject {
+    background-color: #dc3545;
+}
+
+button.reject:hover {
+    background-color: #c82333;
+}
+
+#statusNotification {
+    margin-top: 20px;
+    display: none;
+}
+
+#statusMessage {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+
+/* ------------------------------ task-report----------------------------------------------------- */
+h2, h3 {
+    color: #333;
+    text-align: center;
+}
+
+#form-title {
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* Table styling */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f8f8f8;
+    color: #555;
+}
+
+td {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Action buttons */
+.edit-btn, .delete-btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.edit-btn {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.delete-btn {
+    background-color: #f44336;
+    color: #fff;
+}
+
+.edit-btn:hover {
+    background-color: #45a049;
+}
+
+.delete-btn:hover {
+    background-color: #e53935;
+}
+
+/* Form styling */
+#taskForm {
+    width: 50%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#taskForm label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-size: 14px;
+}
+
+#taskForm input[type="text"], #taskForm input[type="hidden"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+#taskForm button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#taskForm button:hover {
+    background-color: #45a049;
+}
+
+
+/* -------------------------------Calender-------------------------------------------------------------- */
+
+/* Calendar table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+caption {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+td {
+    padding: 20px;
+    text-align: center;
+    vertical-align: top;
+    border: 1px solid #ddd;
+}
+
+td.scheduled {
+    background-color: #a6dcef;
+    border: 2px solid #5bc0de;
+}
+
+td.scheduled strong {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+td:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+/* Form styling */
+form {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+input[type="date"],
+input[type="text"],
+button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="date"],
+input[type="text"] {
+    width: 100%;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Calendar navigation styling */
+.calendar-navigation {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.calendar-navigation a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #4CAF50;
+    margin: 0 15px;
+}
+
+.calendar-navigation a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    td, th {
+        padding: 10px;
+    }
+
+    input[type="date"],
+    input[type="text"],
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .calendar-navigation a {
+        font-size: 16px;
+        margin: 0 10px;
+    }
+}
+
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    table, #taskForm {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    th, td {
+        font-size: 12px;
+    }
+
+    #taskForm button {
+        font-size: 14px;
+    }
+}
