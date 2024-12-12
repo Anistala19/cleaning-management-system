@@ -1,0 +1,861 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.background {
+    background: linear-gradient(#ffffffd1, #ffffffe0), url(img/task-information.webp);
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: 100% 35%;
+    padding: 25px 0;
+
+}
+
+
+.wrapper {
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #800000;
+    color: #fff;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.logo {
+    font-size: 24px;
+    text-align: center;
+}
+
+.menu, .components {
+    list-style: none;
+    padding-left: 0;
+}
+
+.menu li, .components li {
+    margin: 20px 0;
+}
+
+.menu li a, .components li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.menu li a.active, .menu li a:hover {
+    background-color: #800000;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffff !important;
+    margin-bottom: 75px;
+    background-repeat:no-repeat ;
+    background-position: top;
+    background-size: 100%;
+}
+
+.container{
+    background-color: #fff !important;
+    padding-top: 50px;
+}
+
+header {
+    background: #800000;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:20px 0 20px 0;
+}
+
+header a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.head{
+    padding-left: 25px;
+}
+
+.right-head{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding-right: 15px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.logo span{
+    padding-left: 15px;
+    color: #fff;
+}
+
+.logo img{
+    width: 50px;
+    margin-left: 15px;
+}
+
+.search-bar input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.user-profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.user-profile span{
+    padding: 10px 0 10px 0;
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+}
+
+.cards {
+    display: flex;
+    justify-content:space-around;
+    margin: 30px 0 30px 0;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 85%;
+
+}
+.cards a{
+    width: 100%;
+    text-decoration: none;
+}
+
+.card h3 {
+    color: #333;
+    padding-top: 10px;
+}
+
+.card img{
+    width: 100%;
+}
+
+.card p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card small {
+    color: #888;
+}
+
+/* ---------------------------------employee-requirement------------------------------------------------------------------ */
+
+.employee-requirement h1, h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.employee-requirement label{
+    text-align: center;
+    font-size: 26px;
+
+}
+
+.employee-requirement form{
+    gap: 0 !important;
+}
+
+.employee-requirement table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.employee-requirement table, th, td {
+    border: 1px solid #ddd;
+}
+
+.employee-requirement th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+.employee-requirement th {
+    background-color: #982B1C;
+}
+
+.employee-requirement tfoot td {
+    font-weight: bold;
+}
+
+.employee-requirement button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #982B1C;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.employee-requirement button:hover {
+    background-color: #982B1C;
+}
+
+.employee-requirement input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    text-align: center;
+}
+
+
+/* ------------------------------ task-report----------------------------------------------------- */
+h2, h3 {
+    color: #333;
+    text-align: center;
+}
+
+#form-title {
+    margin: 50px 0 20px 0;
+    text-align: center;
+}
+
+.taskForm-button{
+    display: flex !important;
+    justify-content: space-between;
+}
+
+.taskForm-button button{
+    width: 30% !important;
+}
+
+.taskForm-button a{
+    padding: 10px 20px;
+    background-color:#982B1C;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* Table styling */
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #982B1C;
+    color: #555;
+}
+
+td {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Action buttons */
+.edit-btn, .delete-btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.edit-btn {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.delete-btn {
+    background-color: #982B1C;
+    color: #fff;
+}
+
+.edit-btn:hover {
+    background-color: #45a049;
+}
+
+.delete-btn:hover {
+    background-color: #e53935;
+}
+
+/* Form styling */
+#taskForm {
+    width: 50%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#taskForm label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-size: 14px;
+}
+
+#taskForm input[type="text"], #taskForm input[type="hidden"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+#taskForm button {
+    width: 100%;
+    padding: 10px;
+    background-color: #982B1C;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#taskForm button:hover {
+    background-color: #982B1C;
+}
+
+
+/* -------------------------------Calender-------------------------------------------------------------- */
+
+/* Calendar table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+caption {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.calendar  h1{
+    text-align: center;
+    padding-top: 20px;
+
+}
+
+th {
+    background-color: #982B1C;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+td {
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.scheduled a{
+    color: #750a0a;
+}
+
+td.scheduled {
+    background-color: #bcfdbdd9;
+    border: 2px solid #bcfdbdd9;
+}
+
+td.scheduled strong {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+td:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+input[type="date"],
+input[type="text"],
+button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="date"],
+input[type="text"] {
+    width: 100%;
+}
+
+button {
+    background-color: #982B1C;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #982B1C;
+}
+
+/* Calendar navigation styling */
+.calendar-navigation {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.calendar-navigation a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #982B1C;
+    margin: 0 15px;
+}
+
+.calendar-navigation a:hover {
+    text-decoration: underline;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+#salary-form{
+    display: flex;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.salary h1 {
+    font-size: 32px;
+    color: #333333;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.salary p {
+    font-size: 18px;
+    color: #555555;
+}
+
+.salary .section {
+    margin-bottom: 30px;
+    width: -webkit-fill-available;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-top: 35px;
+    justify-content: space-between;
+}
+
+.salary h2 {
+    font-size: 16px;
+    color: #000;
+    text-align: left;
+    width: 120px;
+}
+
+.salary .form-group {
+    margin-bottom: 15px;
+    width: 80%;
+    margin-left: 15px;
+}
+
+.salary label {
+    font-size: 13px;
+    color: #333333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.salary input[type="number"] {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.salary button {
+    background-color: #750a0a;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.salary button:hover {
+    background-color: #750a0ae0;
+}
+
+.salary .result-section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    display: none;
+}
+
+.salary .result-section h3 {
+    font-size: 20px;
+    color: #e93600;
+}
+
+/* ------------------------------------------------------------------------------------------------- */
+
+.card-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container .card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 20px;
+}
+
+.card-container .card-image img {
+    width: 100px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-container .card-content {
+    padding: 20px;
+}
+
+.card-container .card-date {
+    font-size: 12px;
+    color: #aaa;
+}
+
+.card-container .card-title {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-container .card-description {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.card-container .card-button {
+    background: linear-gradient(45deg, #ff5e62, #ff9966);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card-container .card-button:hover {
+    opacity: 0.8;
+}
+
+.card-container .card-pagination {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50px;
+}
+
+.card-container .card-pagination span {
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+.card-container .card-pagination span:nth-child(2) {
+    background-color: #982B1C;
+}
+
+
+/* ---------------footer----------------------------------------------------- */
+/* Styling for the Footer */
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding:20px 0 20px 0;
+}
+
+.footer-content p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #fff;
+}
+
+.footer-content p span {
+    color: #fff;
+    font-weight: bold;
+}
+
+
+/* -----------------------------------------------------task-view---------------------------------------------------- */
+
+.task-view{
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+
+.task-view form button{
+    width: 140px;
+}
+
+.task-view button{
+    width: 140px;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+.editor-container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+}
+textarea {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 10px;
+}
+.formatting-buttons button {
+    margin: 5px;
+}
+
+
+
+/* ----------------------------------------------------------------------------------------------------------------------- */
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+input[type="email"],
+input[type="text"],
+textarea,
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Style for the Log In Button */
+.login-btn {
+    background-color: #4c6ef5; /* Blue background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding for the button */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    font-size: 1rem; /* Set font size */
+    display: inline-block;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.login-btn:hover {
+    background-color: #3b5bdb; /* Darker blue when hovering */
+}
+
+.sign-btn {
+    background-color: #2aab37; /* Blue background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding for the button */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    font-size: 1rem; /* Set font size */
+    display: inline-block;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.sign-btn:hover {
+    background-color: hsl(126, 47%, 54%); /* Darker blue when hovering */
+}
+
+/* -----------------------------------salary view--------------------------------------------------------- */
+.salary-view
+
+.salary-view h1 {
+    text-align: center;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.salary-view h2 {
+    color: #333;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.salary-view h3 {
+    color: #4CAF50;
+    margin-top: 15px;
+}
+
+.salary-view p {
+    margin-bottom: 10px;
+}
+
+.salary-view strong {
+    font-weight: bold;
+}
+
+.salary-view form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+
+/* Responsive design */
+@media (max-width: 600px) {
+    td, th {
+        padding: 10px;
+    }
+
+    input[type="date"],
+    input[type="text"],
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .calendar-navigation a {
+        font-size: 16px;
+        margin: 0 10px;
+    }
+}
+
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    table, #taskForm {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    th, td {
+        font-size: 12px;
+    }
+
+    #taskForm button {
+        font-size: 14px;
+    }
+}
